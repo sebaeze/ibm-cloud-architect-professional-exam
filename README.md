@@ -140,6 +140,19 @@ where a better solution can be using a Content Delivery Network ( CDN )
 #### 
 
 ### Apply appropriate VPC Connectivity
+    - IBM Cloud Direct Link Dedicated ( 2.0 ): Low latency, high throughput connection from/to IBM Cloud to one external conection or    multi-protocol label switching ( MPLS ) network
+    - IBM Cloud Direct Link Connect ( 2.0 ): Connection between IBM Cloud and external on-promises datacenter by using external service provider. Use case is a customer not requiring 5Gbps bandwidth connection.
+    - VPN for VPC: Secure tunnel between IBM Cloud and external datacenter
+
+#### Transit Gateway + Direct Link Dedicated
+    - Connect external customer's datacenter to IBM Cloud VPC bypassing public network, which reduce points of failure due to the connection go through less hops.
+
+#### Transit Gateway
+    - Single point to interconnect IBM Cloud VPCs and Classic Infraestructure and/or external datacenters
+    - Faster connection between VPCs and IBM Cloud regions because It avoid external hops
+    - No Feds for data movement between IBM Cloud regions
+    
+
 ### Utilize Cloud Internet Services appropriately 
 
 ## Section 6: IBM Cloud Security Options ( 13% )
@@ -150,6 +163,8 @@ where a better solution can be using a Content Delivery Network ( CDN )
 ### Describe the benefits of IBM Cloud multi-zone and multi-region architecture
 
 ## Section 8: Observability Capabilities ( 6% )
-### Demonstrate knowledge of monitoring and alerting capabilities  
+### Demonstrate knowledge of monitoring and alerting capabilities
+    - 
+
 ### Demonstrate knowledge of logging capabilities  
 ### Describe the features and use cases for IBM Cloud Flow Logs for VPC  
